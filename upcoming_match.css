@@ -1,0 +1,58 @@
+.match-cards {
+  width: 300px;
+  height: 300px;
+  border: 1px solid #e8e8e8;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.match-flags {
+  height: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
+
+.match-flags span {
+  font-weight: 700;
+}
+
+.match-title {
+  line-height: 30px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.match-time {
+  font-weight: 400;
+  line-height: 20px;
+  font-size: 16px;
+  text-align: center;
+}
+
+/* adding some chikon buddhi -_- */
+
+@media all and (min-width: 1371px) {
+  .match-cards:nth-child(5) {
+    visibility: hidden;
+  }
+}
+
+@media all and (min-width: 993px) {
+  .main-area {
+    max-height: 900px;
+  }
+}
+
+@media all and (max-width: 576px) {
+  .blog {
+    border: 1px solid #e8e8e8;
+  }
+
+  .match-cards {
+    margin-inline: auto;
+  }
+}
